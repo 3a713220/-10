@@ -1,0 +1,20 @@
+
+＃包括< stdio.h中>
+＃包括< stdlib.h中>
+＃包括< string.h中>
+main（）
+{
+  char S [ 5000 ];
+  while（scanf（“％s ”，S）== 1）
+      {
+         int a，N = strlen（S）;
+         for（a = N- 1 ; a> = 0 ; a--）
+             if（S [a]> = ' a '）  
+               printf（“％c ”，S [a]  - ' a ' + ' A '）;
+             其他 
+               printf（“％c ”，S [a]  - ' A ' + ' a '）;
+          puts（“ ”）;
+      } 
+ 系統（“暫停”）;
+ 返回 0 ;   
+}
